@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'classfifteen';
+  searchHistory = [];
+
+  addSearch(newSearch: string) {
+    this.searchHistory.push(newSearch);
+  }
 }
